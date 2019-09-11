@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-
+  res.send('working now!!')
 })
 app.get('/a', (req, res) => res.send('Hello World!aaaa'))
 app.get('/new', (req, res) => res.send({
@@ -23,4 +23,4 @@ app.post('/secured', (req, res) => {
     })
 })
 
-app.listen(port, () => console.log(`url is http://localhost:${port}!`))
+app.listen(port, () => console.log(`url is http://site:${port}!`))
